@@ -1,37 +1,32 @@
-# Gestor de Consultes de Recursos
+# 📚 Resource Query Manager (Java)
 
-Aquest projecte en Java implementa una aplicació de consola per gestionar consultes d’usuaris a diferents recursos. L’aplicació permet carregar dades des d’un fitxer, gestionar consultes i mostrar estadístiques sobre l’ús dels recursos.
+This Java console application manages user queries to different resources. The program allows loading data from a file, handling queries, and displaying statistics about resource usage.
 
-## Estructura del projecte
+## 📦 Project Structure
+- **Aplicacio/UsaLlistaPersones.java**: Main application class. Manages the user menu, data loading, and user interaction.  
+- **Dades/LlistaPersones.java**: Stores and manages a list of `Persona` objects. Includes functions to add, delete, or query data.  
+- **Dades/Persona.java**: Represents a person with attributes like query date, alias, and resource consulted.  
+- **LlistaPersones.txt**: Input file with initial data for the application.
 
-- **`Aplicacio/UsaLlistaPersones.java`**: Classe principal de l’aplicació. Gestiona el menú d’usuari, la lectura de dades i la interacció amb l’usuari.
-- **`Dades/LlistaPersones.java`**: Classe que emmagatzema i gestiona una llista d’objectes `Persona`. Inclou funcionalitats com afegir, esborrar o consultar dades.
-- **`Dades/Persona.java`**: Classe que representa una persona amb atributs com la data de consulta, l’àlies i el recurs consultat.
-- **`LlistaPersones.txt`**: Fitxer amb les dades inicials per carregar a l’aplicació.
+## 🚀 Main Features
+Through the application menu, the user can:
+- Add data: Register a new user query.  
+- Delete data by resource: Remove all queries associated with a resource.  
+- Delete data by date and resource: Remove queries for a resource on a specific date.  
+- Show users per resource: See which users queried a given resource.  
+- Show users per resource and date: Show users who queried a resource on a specific date.  
+- Show the most queried resource.  
+- Show resources consulted by a specific user.  
+- Check if a user has accessed a specific resource.  
+- Exit the program.
 
-## Funcionalitats principals
+## 🛠️ Requirements
+- Java 8 or higher.  
+- `LlistaPersones.txt` file in the same folder as the project or specify the correct path in the code.
 
-A través del menú de l’aplicació, l’usuari pot:
+## ▶️ How to Run
+1. Compile the Java files: `javac Aplicacio/UsaLlistaPersones.java Dades/LlistaPersones.java Dades/Persona.java`  
+2. Run the program: `java Aplicacio.UsaLlistaPersones`
 
-1. **Afegir dades**: Registrar una nova consulta d’un usuari.
-2. **Esborrar dades d’un recurs**: Eliminar totes les consultes associades a un recurs.
-3. **Esborrar dades d’una data i recurs**: Esborrar consultes per a un recurs en una data concreta.
-4. **Mostrar usuaris per recurs**: Veure quins usuaris han consultat un recurs determinat.
-5. **Mostrar usuaris per recurs i data**: Mostrar quins usuaris han consultat un recurs en una data específica.
-6. **Mostrar el recurs més consultat**.
-7. **Mostrar recursos consultats per un usuari determinat**.
-8. **Comprovar si un usuari ha vist un recurs concret**.
-9. **Sortir del programa**.
-
-## Requisits
-
-- Java 8 o superior.
-- Fitxer `LlistaPersones.txt` a la mateixa carpeta del projecte o indicar el path correcte en el codi.
-
-## Execució
-
-1. Compila els arxius `.java`:
-   ```bash
-   javac Aplicacio/UsaLlistaPersones.java Dades/LlistaPersones.java Dades/Persona.java
-2. Executa el programa:
-   java Aplicacio.UsaLlistaPersones
+## 📝 About
+This project demonstrates how to manage user queries with Java, combining file input, object-oriented programming, and console-based menus. It emphasizes modularity and clear structure while providing useful operations for querying, updating, and analyzing resource usage. The application serves as a practical example of integrating Java classes, file handling, and user interaction in a console environment.
